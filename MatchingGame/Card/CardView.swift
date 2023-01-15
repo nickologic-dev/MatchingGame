@@ -19,10 +19,8 @@ struct CardView: View {
         ZStack {
             CardFrontView(imgName: model.grid[location.row][location.col].image, degree: $frontDegree)
             CardBackView(degree: $backDegree)
-            if model.grid[location.row][location.col].matched {
-                CardFoundView()
-            }
         }
+        .opacity(model.grid[location.row][location.col].matched ? 0 : 100)
         .onTapGesture() {
             if !model.grid[location.row][location.col].matched {
                 model.selected.append(model.grid[location.row][location.col])
