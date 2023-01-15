@@ -13,7 +13,8 @@ public class GridModel: ObservableObject {
     let width: Int = 3
     @Published var grid : [[Card]] = []
     var selected: [Card] = []
-    private let images: [String] = ["seal", "scribble.variable", "paperplane.fill", "trash.square.fill", "questionmark.folder.fill", "square.and.arrow.up.fill"].shuffled()
+//    private let images: [String] = ["seal", "scribble.variable", "paperplane.fill", "trash.square.fill", "questionmark.folder.fill", "square.and.arrow.up.fill"].shuffled()
+    private let images: [String] = ["matcha_1", "matcha_2", "matcha_3", "matcha_4", "matcha_5", "matcha_6"].shuffled()
     
     init() {
         generateGrid()

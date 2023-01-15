@@ -16,8 +16,11 @@ struct CardFrontView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.blue)
-            Image.init(systemName: imgName)
-                .imageScale(.large)
+//            Image.init(systemName: imgName)
+//                .imageScale(.large)
+            Image(imgName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
         }
         .rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
     }
