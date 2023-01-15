@@ -41,7 +41,8 @@ public class GridModel: ObservableObject {
     
     func matching() {
         if selected.count == 2 {
-            if selected[0].image == selected[1].image {
+            // TODO: make sure not selecting the same image twice
+            if selected[0].image == selected[1].image { //&& selected[0].location != selected[1].location {
                 grid[selected[0].location.row][selected[0].location.col].matched = true
                 grid[selected[1].location.row][selected[1].location.col].matched = true
             } else {

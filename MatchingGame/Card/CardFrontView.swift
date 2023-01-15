@@ -15,9 +15,7 @@ struct CardFrontView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.blue)
-//            Image.init(systemName: imgName)
-//                .imageScale(.large)
+                .fill(Color(red: 0, green: 45/255, blue: 121/255))
             Image(imgName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
