@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		781FB4162973669E00FEE8AD /* CardFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781FB4152973669E00FEE8AD /* CardFoundView.swift */; };
 		7833F25929735B52001D4351 /* MatchingGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833F25829735B52001D4351 /* MatchingGameApp.swift */; };
 		7833F25B29735B52001D4351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833F25A29735B52001D4351 /* ContentView.swift */; };
 		7833F25D29735B54001D4351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7833F25C29735B54001D4351 /* Assets.xcassets */; };
@@ -15,10 +16,11 @@
 		7833F26929735D4B001D4351 /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833F26829735D4B001D4351 /* CardBackView.swift */; };
 		7833F26B29735EDA001D4351 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833F26A29735EDA001D4351 /* CardView.swift */; };
 		7833F26D29735F20001D4351 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833F26C29735F20001D4351 /* GridView.swift */; };
-		7833F27029736170001D4351 /* MatchingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833F26F29736170001D4351 /* MatchingModel.swift */; };
+		7833F27029736170001D4351 /* GridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833F26F29736170001D4351 /* GridModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		781FB4152973669E00FEE8AD /* CardFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFoundView.swift; sourceTree = "<group>"; };
 		7833F25529735B52001D4351 /* MatchingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7833F25829735B52001D4351 /* MatchingGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGameApp.swift; sourceTree = "<group>"; };
 		7833F25A29735B52001D4351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		7833F26829735D4B001D4351 /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
 		7833F26A29735EDA001D4351 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7833F26C29735F20001D4351 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		7833F26F29736170001D4351 /* MatchingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingModel.swift; sourceTree = "<group>"; };
+		7833F26F29736170001D4351 /* GridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 				7833F25829735B52001D4351 /* MatchingGameApp.swift */,
 				7833F25A29735B52001D4351 /* ContentView.swift */,
 				7833F26C29735F20001D4351 /* GridView.swift */,
-				7833F26F29736170001D4351 /* MatchingModel.swift */,
+				7833F26F29736170001D4351 /* GridModel.swift */,
 				7833F26E29736147001D4351 /* Card */,
 				7833F25C29735B54001D4351 /* Assets.xcassets */,
 				7833F25E29735B54001D4351 /* Preview Content */,
@@ -86,6 +88,7 @@
 				7833F26A29735EDA001D4351 /* CardView.swift */,
 				7833F26629735C08001D4351 /* CardFrontView.swift */,
 				7833F26829735D4B001D4351 /* CardBackView.swift */,
+				781FB4152973669E00FEE8AD /* CardFoundView.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -165,8 +168,9 @@
 				7833F25929735B52001D4351 /* MatchingGameApp.swift in Sources */,
 				7833F26B29735EDA001D4351 /* CardView.swift in Sources */,
 				7833F26D29735F20001D4351 /* GridView.swift in Sources */,
-				7833F27029736170001D4351 /* MatchingModel.swift in Sources */,
+				7833F27029736170001D4351 /* GridModel.swift in Sources */,
 				7833F26929735D4B001D4351 /* CardBackView.swift in Sources */,
+				781FB4162973669E00FEE8AD /* CardFoundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,17 +9,28 @@ import SwiftUI
 
 struct CardView: View {
     
+    var location: CardLocation
     @State private var flipped: Bool = false
     @State private var frontDegree: Double = -90.0
     @State private var backDegree: Double = 0.0
+    @StateObject var model: GridModel
     
     var body: some View {
         ZStack {
-            CardFrontView(degree: $frontDegree)
+            CardFrontView(imgName: model.grid[location.row][location.col].image, degree: $frontDegree)
             CardBackView(degree: $backDegree)
+            if model.grid[location.row][location.col].matched {
+                CardFoundView()
+            }
         }
         .onTapGesture() {
-            flipCard()
+            if !model.grid[location.row][location.col].matched {
+                model.selected.append(model.grid[location.row][location.col])
+                model.matching()
+                if !model.grid[location.row][location.col].matched {
+                    flipCard()
+                }
+            }
         }
     }
     
@@ -42,6 +53,6 @@ struct CardView: View {
         }
     }
     
-    // source for help: https://betterprogramming.pub/card-flip-animation-in-swiftui-45d8b8210a00
+    // source for flipping card: https://betterprogramming.pub/card-flip-animation-in-swiftui-45d8b8210a00
 
 }

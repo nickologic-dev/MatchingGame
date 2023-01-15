@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
 
+    var model: GridModel = GridModel()
+    
     var body: some View {
-        GridView(height: 4, width: 3)
+        Button("Restart") {
+            model.generateGrid()
+        }
+        GridView(height: 4, width: 3, model: model)
     }
 }

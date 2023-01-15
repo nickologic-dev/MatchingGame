@@ -9,18 +9,34 @@ import SwiftUI
 
 struct GridView: View {
     
-    var height: Int
-    var width: Int
+    let height: Int
+    let width: Int
+//    @State var tapCounter: Int = 0
+    @ObservedObject var model: GridModel
     
     var body: some View {
         VStack {
             ForEach(0..<height) { i in
                 HStack {
-                    ForEach(0..<width) { i in
-                        CardView()
+                    ForEach(0..<width) { j in
+                        CardView(location: model.grid[i][j].location, model: model)
                     }
                 }
             }
         }
+        .simultaneousGesture(
+            TapGesture()
+                .onEnded {
+//                    tapCounter += 1
+//                    if tapCounter >= 2 {
+//                        matcher() // TODO: implement
+//                        tapCounter = 0
+//                    }
+                }
+        )
+    }
+    
+    func matcher() -> Bool {
+        return false
     }
 }
